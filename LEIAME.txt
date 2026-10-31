@@ -1,0 +1,13 @@
+SITE PSICÓLOGA ROBERTA DIAS – versão HTML/CSS/JS puro (sem WordPress, sem banco de dados)
+
+COMO INSTALAR NA HOSTMIDIA
+1. Edite enviar.php (topo do arquivo) e defina $DESTINATARIO = e-mail que receberá as mensagens do formulário.
+   (Opcional) $REMETENTE = um e-mail real do seu domínio, ex.: contato@seudominio.com.br
+2. No cPanel > Gerenciador de Arquivos, abra public_html, apague o WordPress antigo (se houver) e envie o
+   conteúdo desta pasta (index.html, enviar.php, .htaccess, 404.html, robots.txt, assets/).
+3. Com o SSL ativo, remova o "#" das 3 linhas de HTTPS no .htaccess.
+4. Teste o formulário. Se o e-mail não chegar, mude $USAR_ENVELOPE para false ou defina $REMETENTE.
+
+PARA EDITAR
+- Textos/estrutura: index.html     - Estilos: assets/css/site.css     - Digitação do banner: assets/js/typed.js
+- E-mail exibido na seção Contato (ainda é o endereço provisório do WordPress): procure "cpanel.site" em index.html.
