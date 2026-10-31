@@ -1,0 +1,15 @@
+/* Layout equivalente aos containers do Elementor (sem depender do plugin) */
+*,*::before,*::after{box-sizing:border-box}
+.elementor img{border:none;border-radius:0;box-shadow:none;height:auto;max-width:100%}
+.e-con{display:flex;flex-direction:column;position:relative;width:100%;min-width:0;padding:10px;gap:20px}
+.e-con--p0{padding:0}
+.e-con--boxed{padding:0}
+.e-con--boxed>.e-con-inner{display:flex;flex-direction:column;gap:20px;width:100%;max-width:1140px;margin:0 auto;padding:10px}
+.e-con--boxed.e-con--p0>.e-con-inner{padding:0}
+.e-con--overlap{margin-top:-134px}
+.e-con--row>.e-con-inner{flex-direction:row;flex-wrap:wrap;gap:0;align-items:stretch}
+.e-con--row>.e-con-inner>.e-con{width:100%}
+@media(min-width:768px){.e-con--row>.e-con-inner{flex-wrap:nowrap}.e-con--row>.e-con-inner>.e-con{width:50%}}
+@media(max-width:767px){.e-con--pt30-mobile{padding:30px 0 0}}
+.elementor-widget{position:relative;min-width:0}
+.elementor-widget:not(:last-child){margin-block-end:20px}
